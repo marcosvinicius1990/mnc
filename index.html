@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <title>Ministério Nossa Casa</title>
+</head>
+
+<body> 
+    <div class="caixa-superior">
+        <div class="cabecalho">
+            <h2 class="titulo-cabecalho">Ministério Nossa Casa</h2>
+            <a href="#titulo-inferior" class="link-cabecalho">Quem somos</a>
+            <a href="#titulo-meio" class="link-cabecalho">Cultos</a>
+            <a class="link-cabecalho" onclick="NossaCasa()"><span>Contato</span></a>
+        </div>
+
+        <br> <br> <br>
+
+        <h1>Igreja Cristã</h1>
+
+        <div class="container">
+            <a href="https://www.instagram.com/ministerionossacasa/" target="blank"><img src="./logoinsta1.png"
+                    alt=""></a>
+
+            <a href="https://www.facebook.com/roney.ramos.92167" target="blank"><img src="./logoface.png" alt=""></a>
+        </div>
+
+        <form id="formulario-contato" action="https://Nossacasa.igrejacrista@gmail.com" method="POST">
+            <h3 class="titulo-formulario">Entre em contato</h3>
+            <label>
+                Nome
+                <input type="text" name="Nome" placeholder="Digite seu Nome" required />
+            </label>
+
+            <label>
+                E-mail
+                <input type="email" name="email" placeholder="Digite seu E-mail" required />
+            </label>
+
+            <label>
+                WhatsApp
+                <input type="tel" name="telefone" placeholder="Digite seu telefone" required />
+            </label>
+
+            <label>
+                Fale Conosco
+                <textarea name="info" placeholder="Qual sua dúvida?"></textarea>
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
+
+
+    <h2 id="titulo-meio">Programações</h2>
+
+    <div class="caixa-central">
+        <div class="card">
+            <h3 class="titulo-card">Segunda</h3>
+                <li>Estudo bíblico as 20h</li>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Terça</h3>
+                <li>Adolescentes as 20h</li>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Quarta</h3>
+                <li>Culto as 20h</li>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Quinta</h3>
+                <li>Café as 19h</li>
+                <li>Culto às 20h</li>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Sexta</h3>
+                <li>Ensaio as 19h</li>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Domingo </h3>
+                <li>Café as 9h</li>
+                <li>Culto 10h</li>
+        </div>
+    </div>
+
+
+    <div class="caixa-inferior">
+        <h2 id="titulo-inferior">Sobre nós</h2>
+        <p class="paragrafo-inferior">
+            Somos uma igreja firmada nos mandamentos e ensinamentos bíblicos com a qual Jesus nos deixou e colocamos
+            em
+            prática.
+            Jesus é nossa fonte de águas vivas, fonte inesgotável. Ele é lâmpada para nossos pés, luz para nossos
+            caminhos.
+            Ficamos locaizados no bairro de Curicica na rua pedro celestino de castro n°16 em frente ao borracheiro
+            do
+            Guto.
+            Romanos 11:36 Porque dele e por ele, e para ele, são todas as coisas. Glória, pois, a ele eternamente.
+            Amém!
+        </p>
+    </div>
+</body>
+<script>
+    let formulario = document.getElementById("formulario-contato")
+
+
+    function NossaCasa() {
+        formulario.className = "mostrar-formulario"
+    }
+</script>
+
+</html>
