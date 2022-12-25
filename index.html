@@ -10,95 +10,93 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
     <title>Ministério Nossa Casa</title>
+   
 </head>
 
-<body> 
+<body>
     <div class="caixa-superior">
         <div class="cabecalho">
             <h2 class="titulo-cabecalho">Ministério Nossa Casa</h2>
-            <a href="#titulo-inferior" class="link-cabecalho">Quem somos</a>
-            <a href="#titulo-meio" class="link-cabecalho">Cultos</a>
+            <a href="#titulo-inferior" class="link-cabecalho1">Quem somos</a>
             <a class="link-cabecalho" onclick="NossaCasa()"><span>Contato</span></a>
+            
         </div>
-
         <br> <br> <br>
+        <h1 class="IC">Igreja Cristã</h1>
+        <select>
+            <option>Reuniões</option>
+            <option>Segunda-Estudo bíblico </option>
+            <option>Terça-Adolescentes as 20h</option>
+            <option>Quarta-Culto as20h</option>
+            <option>Quinta-Culto as 20h</option>
+            <option>Sexta-Ensaio as 19h</option>
+            <option>Domingo-Culto as 10h</option>
+        </select>
 
-        <h1>Igreja Cristã</h1>
+    
 
-        <div class="container">
-            <a href="https://www.instagram.com/ministerionossacasa/" target="blank"><img src="./logoinsta1.png"
-                    alt=""></a>
+    <div class="container1">
+        <a class="insta" href="https://www.instagram.com/ministerionossacasa/" target="blank">Acesse nosso
+            Instagram</a>
 
-            <a href="https://www.facebook.com/roney.ramos.92167" target="blank"><img src="./logoface.png" alt=""></a>
-        </div>
+        <a class="face" href="https://www.facebook.com/roney.ramos.92167" target="blank">Acesse nosso Facebook</a>
+    </div>
+    <form id="formulario-contato" action="https://Nossacasa.igrejacrista@gmail.com" method="POST">
+        <h3 class="titulo-formulario">Entre em contato</h3>
+        <label>
+            Nome
+            <input type="text" name="Nome" placeholder="Digite seu Nome" required />
+        </label>
 
-        <form id="formulario-contato" action="https://Nossacasa.igrejacrista@gmail.com" method="POST">
-            <h3 class="titulo-formulario">Entre em contato</h3>
-            <label>
-                Nome
-                <input type="text" name="Nome" placeholder="Digite seu Nome" required />
-            </label>
+        <label>
+            E-mail
+            <input type="email" name="email" placeholder="Digite seu E-mail" required />
+        </label>
 
-            <label>
-                E-mail
-                <input type="email" name="email" placeholder="Digite seu E-mail" required />
-            </label>
+        <label>
+            WhatsApp
+            <input type="tel" name="telefone" placeholder="Digite seu telefone" required />
+        </label>
 
-            <label>
-                WhatsApp
-                <input type="tel" name="telefone" placeholder="Digite seu telefone" required />
-            </label>
+        <label class="faleconosco">
+            Fale Conosco
+            <textarea name="info" placeholder="Qual sua dúvida?"></textarea>
+        </label>
 
-            <label>
-                Fale Conosco
-                <textarea name="info" placeholder="Qual sua dúvida?"></textarea>
-            </label>
-
-            <button type="submit">Enviar</button>
-        </form>
+        <button type="submit">Enviar</button>
+    </form>
 
     </div>
 
-
-    <h2 id="titulo-meio">Programações</h2>
-
-    <div class="caixa-central">
-        <div class="card">
-            <h3 class="titulo-card">Segunda</h3>
-                <li>Estudo bíblico as 20h</li>
-        </div>
-
-        <div class="card">
-            <h3 class="titulo-card">Terça</h3>
-                <li>Adolescentes as 20h</li>
-        </div>
-
-        <div class="card">
-            <h3 class="titulo-card">Quarta</h3>
-                <li>Culto as 20h</li>
-        </div>
-
-        <div class="card">
-            <h3 class="titulo-card">Quinta</h3>
-                <li>Café as 19h</li>
-                <li>Culto às 20h</li>
-        </div>
-
-        <div class="card">
-            <h3 class="titulo-card">Sexta</h3>
-                <li>Ensaio as 19h</li>
-        </div>
-
-        <div class="card">
-            <h3 class="titulo-card">Domingo </h3>
-                <li>Café as 9h</li>
-                <li>Culto 10h</li>
+    <div id="carrosel">
+        <div class="container" id="img">
+            <img src="https://scontent.fbhz1-2.fna.fbcdn.net/v/t39.30808-6/302523872_595290862109178_8426023187762125960_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFEz_lPnt5_Gj8UJU1G7XRpIHniZ9_LOY0geeJn38s5jUtYvUYfAp5Y45swBixk5w4&_nc_ohc=sJ77G7ecZNMAX-Ldo4S&_nc_ht=scontent.fbhz1-2.fna&oh=00_AfCs9MDsNx6-ntTKomeiajRgAC7_aef4g4LHC5AEknI3qg&oe=63AD7937" alt="">
+            <img src="https://scontent.fbhz1-1.fna.fbcdn.net/v/t39.30808-6/287248939_543716980599900_6659285566232334377_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHY_0iPd8U92_Ui9qXPD2IFj1vOZ_qwPvePW85n-rA-94aEBJYqx4pNh0lVqA6nrao&_nc_ohc=8_bc6OibXxAAX-YKRrz&tn=zP97BR8WclihIgNq&_nc_ht=scontent.fbhz1-1.fna&oh=00_AfAYa3KnKXoqLfDPlyDqmp-tr6X5jhpVvkt57QQq4pAWkg&oe=63AC6372" alt="">
+            <img src="https://scontent.fbhz1-2.fna.fbcdn.net/v/t39.30808-6/277468612_497224175249181_3228800008594035683_n.jpg?stp=c0.53.206.206a_dst-jpg_p206x206&_nc_cat=100&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeGzw0j4TfzMjJXGNehsFbwBPgZFSieUxSI-BkVKJ5TFIuL-r8YK5-A60TqrHoeJe2o&_nc_ohc=6TzekGeOTp8AX_z74Ks&_nc_ht=scontent.fbhz1-2.fna&oh=00_AfAqj7VkZnNy44HtIy1uyLIZFT8UgDbp5780gJaJh26lLA&oe=63ACE712" alt="">
+            <img src="https://scontent.fbhz1-2.fna.fbcdn.net/v/t39.30808-6/241660385_375033920801541_7284263677902574303_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFF72G_Anvp9OS1Whop78iletzym26qDP963PKbbqoM_yTeWzitsTOTQzirlHJ4wC4&_nc_ohc=pL9e_ds22Y4AX_o15wA&tn=zP97BR8WclihIgNq&_nc_ht=scontent.fbhz1-2.fna&oh=00_AfA6hWMpdZeiFHgPycNaqK9pOzaT_rDptx3vnemH4Sh76Q&oe=63ADE8CB" alt="">
+            <img src="https://scontent.fbhz1-2.fna.fbcdn.net/v/t39.30808-6/241660206_372734147698185_4003497348641550627_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGOkAHtBbfuupJA-_nK4D0uudwQLOLrYPa53BAs4utg9j0dexSt21zSJlsDg1S_N4c&_nc_ohc=fhfGDHSi_p0AX_q3A-g&_nc_ht=scontent.fbhz1-2.fna&oh=00_AfAX_L136DVRJ3oFERlbfPeANgky5o6ZBwMIN5NAIYPrSQ&oe=63AC7A6F" alt="">
+            <img src="https://scontent.fbhz1-1.fna.fbcdn.net/v/t39.30808-6/270149932_440431690928430_4025741370418946584_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeEUeRxhmvQlrIV_rH532R5gF5koJoBIS9sXmSgmgEhL2_TS6IENaP-PrMdluHD8Jlk&_nc_ohc=TBQTZdSX-xkAX_-mUPS&_nc_ht=scontent.fbhz1-1.fna&oh=00_AfC237o-WXQ6HtwtLqJZiHT4qeHKq1LEiyQMWlBZyEkWMQ&oe=63ACF85F" alt="">
+            <img src="https://scontent.fbhz1-1.fna.fbcdn.net/v/t1.6435-9/209113243_326662262305374_3228116254614646313_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeE7hZTiUPYcPPCLoj970MDcy3AlVQFlDMrLcCVVAWUMylpk1Qv-dnQ5iDlIPi5m3p8&_nc_ohc=gQg-J5gBfpcAX-xI67v&_nc_ht=scontent.fbhz1-1.fna&oh=00_AfCOTxrBXSG_qkOtIyswnLLaKZhfHW9aY_psM_Om5-gBCQ&oe=63CFCF38" alt="">
+            <img src="https://scontent.fbhz1-1.fna.fbcdn.net/v/t1.6435-9/200906836_319981212973479_5457815585293208298_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeE8d-_PKTXUMd7uGdMI6rTiSdtNqM3yVPtJ202ozfJU-wU6h2Vl9uhw53dzl39vSi8&_nc_ohc=NNVMvZ9nIIMAX-W66GF&_nc_ht=scontent.fbhz1-1.fna&oh=00_AfAjCWqA2ogZ61yA4BsdQ_5ItpMjINqFaR7Hs8GVmedeRA&oe=63CFC0C8" alt="">
+            <img src="https://scontent.fbhz1-1.fna.fbcdn.net/v/t39.30808-6/286206174_539893570982241_8761877307051760286_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFZTVIjWOGMrrmtDq9PaIHJVqCh6kSP7HBWoKHqRI_scNmjgytV-ECldkMVs4Kim_c&_nc_ohc=0ydqC2KQIEwAX9Gk-p5&_nc_ht=scontent.fbhz1-1.fna&oh=00_AfDRizV7WitSI6i-LaZcy5lY6YtgFAAkU_1F5FETkMkyCQ&oe=63ACD0CD" alt="">
+            <img src="https://scontent.fbhz1-1.fna.fbcdn.net/v/t39.30808-6/277349748_497224378582494_1135580532989656732_n.jpg?stp=c0.83.206.206a_dst-jpg_p206x206&_nc_cat=102&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeEJNZMK0-YnnEv2SDZyzqYnOBVPQ8VJKKk4FU9DxUkoqdcuLCpp0L89IOIQiXVayr0&_nc_ohc=rumdAVRebYIAX8VNJSm&_nc_ht=scontent.fbhz1-1.fna&oh=00_AfBY7f2D60AnM-_KHn8yYd7iNtBuiO3IegujgigK5rhzwA&oe=63AC536F" alt="">
+            <img src="https://scontent.fbhz1-1.fna.fbcdn.net/v/t39.30808-6/277571814_497224041915861_7443364340515102450_n.jpg?stp=dst-jpg_p206x206&_nc_cat=102&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeGml0Mfdx8wECvF1qhS7AvZ7LPWHwyfnHjss9YfDJ-ceChB7yE8E2uiVeZVFv6V4UE&_nc_ohc=wfR9ti_owr0AX9UY-sR&_nc_ht=scontent.fbhz1-1.fna&oh=00_AfDE2-nfXOTLbs20qJlxU9AgGXfEsJcX19HeCLyWcPJoRg&oe=63ADE46A" alt="">
+            <img src="https://scontent.fbhz1-1.fna.fbcdn.net/v/t39.30808-6/277678590_497223821915883_6335548142643506192_n.jpg?stp=dst-jpg_p206x206&_nc_cat=103&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeFtEgsiS-LoG1a3HmxfmPoKIez2Tgv1KRsh7PZOC_UpG_5eu6layGdZS8ksRkdm_Wo&_nc_ohc=QMXyXTCAwz0AX9YKrDg&_nc_ht=scontent.fbhz1-1.fna&oh=00_AfAwWRCqW8dkOzCnSfv2a8ABqjZf-eSfjeZEbD9KzwwOXQ&oe=63AE10A4" alt="">
+            <img src="https://scontent.fbhz1-2.fna.fbcdn.net/v/t39.30808-6/277671228_497224121915853_5500528066991108660_n.jpg?stp=dst-jpg_p206x206&_nc_cat=109&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeFwOFaFChOHPX5NjF4kGDr9iCUp5WJmqjuIJSnlYmaqO_ZXKaiiWqrZDs9QcoKH9Ls&_nc_ohc=aL3CAXVWt2EAX84C2eS&_nc_ht=scontent.fbhz1-2.fna&oh=00_AfDd6RyRgcieDmUd4fxRWqLD4xmwasdnsIx-8Px-Xsw5yA&oe=63ACE603" alt="">
+            <img src="https://scontent.fbhz1-2.fna.fbcdn.net/v/t39.30808-6/277526963_497223858582546_7117688670817882104_n.jpg?stp=dst-jpg_p206x206&_nc_cat=105&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeEsMb5ZeSBKwIBgU2gk8TVd3ScLi2QAcCrdJwuLZABwKjuIIXcDTkMPFbmM91JgRRk&_nc_ohc=Y-Hr1dbdAl8AX-dz_3r&_nc_ht=scontent.fbhz1-2.fna&oh=00_AfB2J-A7V1xJ60dgcUCtDiy1b3_WbCz8mRqvGb88SwtvxQ&oe=63ADEB76" alt="">
+            <img src="https://scontent.fbhz1-2.fna.fbcdn.net/v/t39.30808-6/277225510_494958882142377_6571574137487787782_n.jpg?stp=dst-jpg_p206x206&_nc_cat=100&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeENzh9M1wv1oi3GloDSlHAtJ1jgHhoazoEnWOAeGhrOgYIQWsNNVRm38bVqULV6iiM&_nc_ohc=LD2Lw8Ns-zMAX-RrMQl&_nc_ht=scontent.fbhz1-2.fna&oh=00_AfBDpuVtRUAbGf-ZaPZLua5ls3E68K97HP8W_fIKYLe4QA&oe=63ACFC1C" alt="">
+            <img src="https://scontent.fbhz1-2.fna.fbcdn.net/v/t39.30808-6/276294108_494958702142395_4642600135952538180_n.jpg?stp=dst-jpg_p206x206&_nc_cat=109&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeEOILNGOKSbdGEQFkmxYnVfujUMGn9FmDG6NQwaf0WYMX7t0DpRotqeAwITPSdYIE8&_nc_ohc=34STXEZwspgAX8fRz5R&_nc_ht=scontent.fbhz1-2.fna&oh=00_AfDUjLLiTFSlGRXMQE5dIrEjZyZQ91J4eARrPsR3o-QYsg&oe=63AD2A78" alt="">
+            <img src="https://scontent.fbhz1-2.fna.fbcdn.net/v/t39.30808-6/273033802_470914004546865_6990855285138490022_n.jpg?stp=c0.83.206.206a_dst-jpg_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeHM1yUWcuTvtb9RWP1e8ztGKMyIhGbeUJQozIiEZt5QlDqrQT1J21vmPfmfxnphxOk&_nc_ohc=o7w-28bFp-EAX9-g-7q&_nc_ht=scontent.fbhz1-2.fna&oh=00_AfD0zaUCH_jEU64YXsNFjkwEyuS9qf7f19T5_sRIh_dlXg&oe=63AE1EDE" alt="">
+            <img src="https://scontent.fbhz1-1.fna.fbcdn.net/v/t39.30808-6/277794986_497224328582499_1799444224238884656_n.jpg?stp=c0.53.206.206a_dst-jpg_p206x206&_nc_cat=102&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeHRjAgdVilHue-3j4KU2ibZ_UYuJIygHnn9Ri4kjKAeeVV3hIrk7R-zLOJf9X_UGYw&_nc_ohc=n3ZGyUfl1O0AX9FBgpM&_nc_ht=scontent.fbhz1-1.fna&oh=00_AfC8vsLMCt5GJe_BM9skIUCHpMG6HYBT6aG82CpKP1t4-A&oe=63ACCCDB" alt="">
+            <img src="https://scontent.fbhz1-1.fna.fbcdn.net/v/t39.30808-6/245851713_396013928703540_8518174578342063711_n.jpg?stp=c0.53.206.206a_dst-jpg_p206x206&_nc_cat=106&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeFEO5PnpKCBoNd3erJWSJts4euqAO6YgH_h66oA7piAfxulCVHgIik7lSnSwXI1cJE&_nc_ohc=77AcrqmOanAAX_Qjj5E&tn=zP97BR8WclihIgNq&_nc_ht=scontent.fbhz1-1.fna&oh=00_AfDIOr0yQ0psK44BI6TdSDAbWBrv1WolZP6_BplGmO8yuA&oe=63AE22DB" alt="">
         </div>
     </div>
-
+</div>
+        
+    </div>
 
     <div class="caixa-inferior">
-        <h2 id="titulo-inferior">Sobre nós</h2>
+        <h2 class="sobre" id="titulo-inferior">Sobre nós</h2>
         <p class="paragrafo-inferior">
             Somos uma igreja firmada nos mandamentos e ensinamentos bíblicos com a qual Jesus nos deixou e colocamos
             em
@@ -108,18 +106,25 @@
             Ficamos locaizados no bairro de Curicica na rua pedro celestino de castro n°16 em frente ao borracheiro
             do
             Guto.
-            Romanos 11:36 Porque dele e por ele, e para ele, são todas as coisas. Glória, pois, a ele eternamente.
+            <br>Romanos 11:36 Porque dele e por ele, e para ele, são todas as coisas. <br> Glória, pois, a ele
+            eternamente.
             Amém!
         </p>
     </div>
 </body>
+
 <script>
-    let formulario = document.getElementById("formulario-contato")
 
 
-    function NossaCasa() {
-        formulario.className = "mostrar-formulario"
-    }
+let formulario = document.getElementById("formulario-contato")
+
+
+function NossaCasa() {
+formulario.className = "mostrar-formulario"
+}
+
 </script>
+
+<script src="./index.js"></script>
 
 </html>

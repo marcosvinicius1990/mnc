@@ -17,41 +17,158 @@
 }
 
 .titulo-cabecalho {
+    margin-left: -1%;
     font-size: 60px;
     color: white;
     display: inline;
-    text-shadow: 2px 2px 3px blue;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 10px 10px aquamarine;
 }
 
-.link-cabecalho {
+.link-cabecalho1{
+    position: absolute;
+    margin-top: 1%;
     color: #FFFFFF;
-    margin-left: 130px;
+    margin-left: 10%;
     cursor: pointer;
     text-decoration: none;
-    text-shadow: white 1px 1px 1px;
+    text-shadow: 2px 2px 1px black;
+}
+
+.link-cabecalho1:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 100px aqua;
+    background-color: white;
+    color: black;
+    text-shadow: none;
+    border-radius: 10px;
+}
+
+span {
+    color: #FFFFFF;
+    margin-left:45%;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 2px 2px 1px black;
+    position: absolute;
+    margin-top: 1%;
+}
+
+
+span:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 100px aqua;
+    background-color: white;
+    color: black;
+    text-shadow: none;
+    border-radius: 10px;
 }
 
 h1 {
     color: white;
-    text-align: center;
+    margin-left: 68.5%;
     font-size: 40px;
     text-shadow: 3px 3px 2px black;
+    position: absolute;
+    margin-top: -8.5%;
 }
+
+select {
+    position: absolute;
+    margin-top: 4%;
+    margin-left: 1%;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 7px;
+}
+
+option {
+    background-color:gainsboro
+}
+
+.carrosel {
+   
+    box-shadow: 2pc 2pc 4pc black;
+    overflow: hidden;
+    height: 250px;
+    width: 100%;
+    position: absolute;
+    bottom: -100%;
+}
+
+
 
 .container {
     display: flex;
-    justify-items: center;
-    justify-content: space-around;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
 }
 
+img {
+    border: 2px outset white;
+    
+    height: 250px;
+    width: 250px;
+}
+
+img:active {
+    cursor: pointer;
+    width: 400px;
+    height: 400px;
+}
+
+
+
+.container1 {
+    margin-top: -6%;  
+}
+
+.insta {
+    position: absolute;
+    font-size: 25px;
+    margin-left: 22%;
+    color: white;
+    margin-top: 3%;
+}
+
+.insta:hover {
+    transform: scale(1.);
+    box-shadow: 1px 10px 10px aqua;
+    background-color: white;
+    color: black;
+    text-shadow: none;
+    border-radius: 5px;
+}
+
+.face {
+    font-size: 25px;
+    margin-left: 1%;
+    color: white;
+    position: absolute;
+    margin-top: 3%;
+}
+
+.face:hover {
+    transform: scale(1.);
+    box-shadow: 1px 10px 10px aqua;
+    background-color: white;
+    color: black;
+    text-shadow: none;
+    border-radius: 5px;
+}
+
+
 form {
+    position: absolute;
     opacity: 0;
-    transition: opacity 2s linear;
+    transition: opacity 1s linear;
     background-color: #87CEEB;
-    border-radius: 10px;
-    float: right;
+    border-radius: 50px;
+    border: black solid;
     padding: 40px;
-    margin-right: 50px;
+    margin-left: 73%;
+    margin-top: 10%;
 }
 
 .mostrar-formulario {
@@ -73,8 +190,7 @@ label {
 input {
     display: block;
     background: #F9F9F9;
-    border: 1px solid #E6E6E6;
-    border-radius: 5px;
+    border-radius: 50px ;
     height: 40px;
     width: 250px;
     margin-bottom: 20px;
@@ -114,33 +230,9 @@ button {
     background-color: #5ddcff;
 }
 
-.caixa-central {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-
-.card {
-    width: 220px;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    border: double 5px black;
-}
-
-.titulo-card {
-    background: #219653;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px 10px 0 0;
-    text-shadow: black 2px 2px;
-    font-style: italic;
-}
-
 .caixa-inferior {
     background-color: #00095d;
+   
 }
 
 #titulo-inferior {
@@ -157,38 +249,104 @@ button {
     padding: 20px 50px 50px 50px;
 }
 
-@media screen and (max-width:1320px) {
+@media all and (max-width:500px) {
+   
+
 
     .caixa-superior {
-    width: 100%;
-    height: 50vh;
-    padding: 0;
-    margin: 0;
     background-image: url(./mnc1.jpg);
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
     }
 
-   
     .titulo-cabecalho {
-        font-size: 30px;
-        margin: 0;
-        padding: 0;
+        position: absolute;
+        left: 2%;
+        font-size: 25px;
     }
 
-    .link-cabecalho {
+    .link-cabecalho1 {
+        position: absolute;
+        right: 22%;
         font-size: 18px;
-        margin-left: 18px;
         text-shadow: 2px 1px black;
         color: white;
         font-weight: 900;
+        top: -0.5%;
+    }
+
+    span {
+        position: absolute;
+        font-size: 18px;
+        right: 30px;
+        top: -0.5%;
+        font-weight: 900;
+    }
+
+   .titulo-formulario {
+    font-size: 18px;
+    margin-top: 1%;
+   }
+
+   input, textarea {
+    width: 85%;
+   }
+
+ .faleconosco {
+    display: none;
+ }
+
+    button {
+        width: 70%;
+        margin-left: 15%;
+        border-radius: 50px;
+    }
+
+    #formulario-contato {
+        position: static;
+        margin-left: 45%;
+        width: 53%;
+    }
+
+    select {
+        font-size: 18px;
+        width: 23%;
+        margin-top: 8%;
+    }
+
+    #carrosel {
+    position: absolute;
+    top: 79%;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    }
+
+    .container1 {
+        font-style: italic;
+    }
+    
+    .insta {
+        font-size: 15px;
+        position: absolute;
+        margin-left: 69%;
+        margin-top: 5%;
+    }
+
+    .face {
+        font-size: 15px;
+        position: absolute;
+        margin-left: 1%;
+        margin-top: 5%;
     }
 
     h1 {
         display: none;
     }
-
-    .container {
-        display: none;
-        }
+   
 
    #formulario-contato {
      padding: 1vh;
@@ -200,11 +358,19 @@ button {
     color: black;
    }
 
-   .caixa-central {
-    display: flex;
-    flex-direction: column;
-    margin: 12vh;
+   #titulo-inferior {
+    position: absolute;
+    background: #00095d;
+    width: 100%;
+    height: 70%;
+    margin-top: 130%;
    }
 
+   .paragrafo-inferior {
+    position: absolute;
+    margin-top: 150%;
+    text-align: center;
+   }
 
 }
+
